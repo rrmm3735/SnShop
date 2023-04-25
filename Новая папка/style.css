@@ -1,0 +1,205 @@
+/* Navbar styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #555;
+}
+
+/* Header styling */
+header {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* About section styling */
+.about {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Advantages section styling */
+.advantages {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.advantages h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.advantages li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Guarantee section styling */
+.guarantee {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.guarantee h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.guarantee p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Delivery section styling */
+.delivery {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.delivery h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.delivery p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.delivery ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.delivery li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Contact section styling */
+.contact {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border: 1px solid #333;
+}
+
+.contact button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+/* Footer styling */
+.footer {
+   
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

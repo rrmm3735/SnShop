@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название компании</title>
+    <!-- Подключение библиотеки Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Подключение CSS-стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- Шапка сайта -->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">Название компании</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Наши преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Условия доставки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Связаться с нами</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Основной контент сайта -->
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Модные кроссовки от лучших производителей</h1>
+                            <p>У нас вы найдете самые популярные модели кроссовок от таких брендов, как Nike, Adidas, Puma и многих других. Все товары сертифицированы и имеют гарантию качества.</p>
+                            <button class="btn btn-primary">Купить сейчас</button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/sneakers.jpg" alt="Кроссовки" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <h2>Новые поступления</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/AF1.jpg" alt="Кроссовки" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nike Air Force 1</h5>
+                                    <p class="card-text">Цена: $100</p>
+                                    <button class=".buy-btn" onclick="addToCart(products[i])">Добавить в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/AS.jpg" alt="Кроссовки" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adidas Superstar</h5>
+                                    <p class="card-text">Цена: $80</p>
+                                    <button class=".buy-btn" onclick="addToCart(products[i])">Добавить в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/rsx.jpg" alt="Кроссовки" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Puma RS-X</h5>
+                                    <p class="card-text">Цена: $90</p>
+                                    <button class=".buy-btn" onclick="addToCart(products[i])">Добавить в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us">
+                <div class="container">
+                    <h2>О компании</h2>
+                    <p>Наша компания занимается продажей модных кроссовок уже более 10 лет. Мы сотрудничаем с лучшими производителями кроссовок и предлагаем широкий выбор моделей для мужчин, женщин и детей.</p>
+                </div>
+            </section>
+
+            <section class="guarantee">
+                <div class="container">
+                    <h2>Гарантия качества</h2>
+                    <p>Мы уверены в качестве наших товаров и предоставляем гарантию на все кроссовки, которые мы продаем. Если вы не удовлетворены своей покупкой, мы вернем вам деньги или обменяем кроссовки на другую модель.</p>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="container">
+                    <h2>Связаться с нами</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input
+                            type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+               <div class="cart">
+                <h2>Корзина</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Количество</th>
+                            <th>Цена за единицу</th>
+                            <th>Цена</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Общая стоимость:</td>
+                            <td id="cart-total-price">0.00</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="cart-buttons">
+                    <a href="#" class="btn btn-primary" id="checkout-btn">Оформить заказ</a>
+                    <a href="#" class="btn btn-secondary" id="clear-cart-btn">Очистить корзину</a>
+                </div>
+            </div>
+        <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Наш адрес:</h5>
+                            <p>ул. Пушкина, д.10, офис 23</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Наш телефон:</h5>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Мы в соцсетях:</h5>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
